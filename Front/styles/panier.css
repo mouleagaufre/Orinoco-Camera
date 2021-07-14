@@ -1,0 +1,47 @@
+#navbar {
+    padding: 0 20px 0 20px;
+    margin-bottom: 2rem; }
+    #navbar .navbar-brand {
+      width: 100%;
+      display: flex;
+      align-items: center; }
+      #navbar .navbar-brand img {
+        margin-right: 10px; }
+      #navbar .navbar-brand h1 {
+        font-size: 2vw;
+        margin-left: 10px;
+        margin-right: 75px; }
+    #navbar #navbarContent {
+      width: 100%; }
+    #navbar a {
+      font-size: 1.2vw; }
+  
+      a {
+        width: 50%;
+        text-align: center;
+      }
+
+      .mb-4{
+        display: flex;
+        justify-content: center;
+      }
+
+      .btn{
+        width: 20px;
+      }
+
+      /* .btn1{
+
+      } */
+  /* h1 {
+    font-size: 2vw; } */
+  
+/* .jumbotron{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+.card-body{
+    display: flex;
+    flex-direction: column;
+  }

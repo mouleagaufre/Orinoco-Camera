@@ -1,0 +1,114 @@
+*,::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+ 
+ body {
+    background: #b8bfb4;
+    height: 100vh;
+  }
+
+ .container-header {
+display: flex;
+align-items: center;
+margin-top: 20px;
+ }
+
+  .logo-container img {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 80px;
+    }
+
+    nav {
+    height: 70px;
+    width: 100%;
+    
+    }
+
+    .liste-nav {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    }
+
+    .item-nav1{
+        display: inline-block;
+        line-height: 70px;
+        font-size: 25px;
+        margin: 0 10px;
+        cursor: pointer; 
+    }
+    .item-nav1 a{
+        text-decoration: none;
+        color: #303030;
+    }
+    .item-nav1 :hover {
+        font-weight: 550;
+    }
+    .item-nav2{
+        display: inline-block;
+        line-height: 70px;
+        font-size: 25px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    .item-nav2 a{
+        text-decoration: none;
+        color: #303030;
+    }
+    .item-nav2 :hover {
+        font-weight: 550;
+    }
+    
+
+    .item-nav3{
+        display: inline-block;
+        line-height: 70px;
+        font-size: 25px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    .item-nav3 a{
+        text-decoration: none;
+        color: #949494;
+    }
+    
+    .item-nav4{
+        display: inline-block;
+        line-height: 70px;
+        font-size: 25px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    .item-nav4 a{
+        text-decoration: none;
+        color: #303030
+    }
+    .item-nav4 :hover {
+        font-weight: 550;
+    }
+
+    
+    
+    .btn-toggle-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+    }
+    
+    .btn-toggle-container img {
+    width: 40px;
+    }
+    
+    hr {
+        width: 90%;
+        height: 2px;
+        border: none;
+        margin: 20px auto;
+        background-color: #333;
+    }
