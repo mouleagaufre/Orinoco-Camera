@@ -6,7 +6,7 @@ const urlSearchParams = new URLSearchParams(queryString_url_id);
 const productId = urlSearchParams.get("id_camera");
 console.log(productId);
 
-// localStorage.clear();
+//  localStorage.clear();
 
 // récupération du produit avec l'id associé
 fetch(`http://localhost:3000/api/cameras/${productId}`)
@@ -106,7 +106,7 @@ fetch(`http://localhost:3000/api/cameras/${productId}`)
     submit.addEventListener('mouseout',function(){this.style.backgroundColor='#e8ecef'});
     form.appendChild(submit);
 
-
+    // local storage
     form.onsubmit = function(form) {
       form.preventDefault();
       
@@ -134,21 +134,18 @@ fetch(`http://localhost:3000/api/cameras/${productId}`)
       
       localStorage.setItem('panier', JSON.stringify(cart));
       console.log(cart);
-      alert("ce produit vient d'étre ajouté à votre panier");
 
-      // if ( confirm( "Voulez vous voir votre panier OK ou Continuer vos achats ANNULER")) {
-      // window.location.href = '../Front/html/panier.html';
-      // }
-      // else{ 
-      //   window.location.href = '../index.html';
-      // }
-
- // redirige vers la page panier
-// formulaire
+      // popup confirmation / redirection 
+      if ( confirm( "Voulez vous voir votre panier OK ou Continuer vos achats ANNULER")) {
+      window.location.href = 'panier.html';
+      
+      }
+      else{ 
+        window.location.href = '../index.html';
+      }
 
     };
 
-    
     
     inner.appendChild(form);
 
